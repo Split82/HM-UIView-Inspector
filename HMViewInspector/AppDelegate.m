@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HMViewInspector.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[HMViewInspector sharedHMViewInspector] enableInspectionTrigger];    
+    
     return YES;
 }
 							
