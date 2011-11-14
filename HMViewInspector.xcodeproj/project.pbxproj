@@ -19,7 +19,7 @@
 		551749E4146E047E00E40163 /* HMInspectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551749E2146E047E00E40163 /* HMInspectorView.m */; };
 		558B940214709FDF00CD573D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 558B940114709FDF00CD573D /* Icon.png */; };
 		558B940514709FE300CD573D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 558B940414709FE200CD573D /* Icon@2x.png */; };
-		558B94121470ADC300CD573D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 558B94111470ADC300CD573D /* README.md */; };
+		558B94181470B3B200CD573D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 558B94171470B3B200CD573D /* README.md */; };
 		55926DD7146EFC4F000ED0A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55926DD6146EFC4F000ED0A5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,7 @@
 		551749E2146E047E00E40163 /* HMInspectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMInspectorView.m; sourceTree = "<group>"; };
 		558B940114709FDF00CD573D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		558B940414709FE200CD573D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
-		558B94111470ADC300CD573D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		558B94171470B3B200CD573D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		55926DD6146EFC4F000ED0A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -107,7 +107,7 @@
 		551749B6146DF11800E40163 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				558B94111470ADC300CD573D /* README.md */,
+				558B94171470B3B200CD573D /* README.md */,
 				551749B7146DF11800E40163 /* HMViewInspector-Info.plist */,
 				551749B8146DF11800E40163 /* InfoPlist.strings */,
 				551749BB146DF11800E40163 /* main.m */,
@@ -199,7 +199,7 @@
 				551749C3146DF11800E40163 /* MainStoryboard.storyboard in Resources */,
 				558B940214709FDF00CD573D /* Icon.png in Resources */,
 				558B940514709FE300CD573D /* Icon@2x.png in Resources */,
-				558B94121470ADC300CD573D /* README.md in Resources */,
+				558B94181470B3B200CD573D /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
