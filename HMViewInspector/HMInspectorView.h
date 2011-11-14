@@ -21,10 +21,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface HMInspectorView : UIView
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readonly, strong) NSMutableArray *inspectorSubviews;
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIView *originalView;
+@property (nonatomic, assign) CGRect originalFrame;
+@property (nonatomic, assign) BOOL originalClipsToBounds;
+@property (nonatomic, assign) CGRect inspectorFrame;
+@property (nonatomic, assign) CGFloat placeholderHeight;
+@property (nonatomic, assign) BOOL expanded;
+
+- (void)addInspectorSubview:(HMInspectorView*)inspectorView;
+- (void)useInspectorFrame;
+- (HMInspectorView*)findFirstInspectorViewWithPoint:(CGPoint)point tolerance:(CGFloat)tolerance;
+- (CGFloat)maxX;
+- (CGRect)containerBoundsForSelfAndFirstLevelSubviews;
+- (void)updateBackgroundViewsWithLevel:(NSInteger)level spaceToMaxX:(CGFloat)spaceToMaxX;
 
 @end
