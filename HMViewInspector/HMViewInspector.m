@@ -295,7 +295,7 @@ static HMViewInspector *sharedHMViewInspector = nil;
     [self refreshInspectorViewFramesAnimated:NO];
 }
 
-- (void)restoreOriginalViewHierarchy {
+- (void)dismissInspectorViewHierarchy {
     
     if (!inspectorViewHierarchyIsPresented) {
         return;
@@ -315,7 +315,7 @@ static HMViewInspector *sharedHMViewInspector = nil;
 - (void)triggerGestureRecognized:(UIGestureRecognizer*)gestureRecognizer {
     
     if (inspectorViewHierarchyIsPresented) {
-        [self restoreOriginalViewHierarchy];
+        [self dismissInspectorViewHierarchy];
     }
     else {
         [self presentInspectorViewHierarchy];

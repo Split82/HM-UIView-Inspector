@@ -31,4 +31,7 @@
 - (void)enableDefaultInspectionTrigger;
 - (void)disableDefaultInspectionTrigger;
 
+- (void)presentInspectorViewHierarchy;
+- (void)dismissInspectorViewHierarchy;
+
 @end

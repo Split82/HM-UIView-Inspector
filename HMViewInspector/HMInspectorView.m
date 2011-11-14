@@ -104,7 +104,7 @@
     
     if (expanded) {
         self.imageView.layer.borderWidth = 1;
-        self.imageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BGTile.png"]]; 
+        self.imageView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor]; 
         self.backgroundColor = [UIColor colorWithWhite:0.3 alpha:1.0];
         self.clipsToBounds = NO;
         [self insertSubview:infoView belowSubview:imageView];        
@@ -113,7 +113,7 @@
     else if (![self.superview isKindOfClass:[HMInspectorView class]] || ([self.superview isKindOfClass:[HMInspectorView class]] && ((HMInspectorView*)self.superview).expanded)) {
         
         self.imageView.layer.borderWidth = 1;
-        self.imageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BGTile.png"]]; 
+        self.imageView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor]; 
         self.backgroundColor = [UIColor clearColor];        
         self.clipsToBounds = originalClipsToBounds;
         [infoView removeFromSuperview];
